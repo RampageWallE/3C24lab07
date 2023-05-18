@@ -2,7 +2,7 @@
 $contrasena = "AVNS_MQt7Ofh9QJaLWV5yK5Y";
 $usuario = "doadmin";
 $nombre_bd = "LAB08";
-$host= "db-mysql-nyc1-79367-do-user-14090344-0.b.db.ondigitalocean.com:";
+$host= "db-mysql-nyc1-79367-do-user-14090344-0.b.db.ondigitalocean.com:25060";
 	
 try {
 	$bd = new PDO (
