@@ -14,6 +14,7 @@
   </head>
   <!-- Color de fondo de pantalla  -->
   <body style="background: background: #360033;background: -webkit-linear-gradient(to right, #0b8793, #360033);background: linear-gradient(to right, #0b8793, #360033);">
+  <!-- Fin de color pantalla -->
       <header class="p-3">
         <div class="row justify-content-end">
           <!-- Texto de header  -->

@@ -5,6 +5,7 @@ if (!isset($_GET['codigo'])) {
 }
 
 include 'model/conexion.php';
+// Agarra la variable de la pagian anterior y lo almacena en la variable 
 $codigo = $_GET['codigo'];
 
 $sentencia = $bd->prepare("SELECT ven.producto, ven.cantidad , ven.precio, ven.id_persona, cli.nombre , cli.ap_materno , cli.ap_paterno, cli.celular
@@ -14,7 +15,7 @@ $sentencia = $bd->prepare("SELECT ven.producto, ven.cantidad , ven.precio, ven.i
 $sentencia->execute([$codigo]);
 $venta = $sentencia->fetch(PDO::FETCH_OBJ);
 
-$url = 'https://api.green-api.com/waInstance1101816199/SendMessage/05614ce3d3f140bab0662d57352c466455d394009cc242c2b2';
+    $url = 'https://api.green-api.com/waInstance1101816199/SendMessage/05614ce3d3f140bab0662d57352c466455d394009cc242c2b2';
 //API Piero: 'https://api.green-api.com/waInstance1101816199/SendMessage/05614ce3d3f140bab0662d57352c466455d394009cc242c2b2';
 //API Nicolas: 'https://api.green-api.com/waInstance1101816193/SendMessage/60ddb65572bb4a00889d7db3f00edb77fa274730b83145779a';
 $data = [
